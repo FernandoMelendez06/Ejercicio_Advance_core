@@ -1,0 +1,12 @@
+[Unit]
+Description=API del sistema Examen (backend)
+After=network.target
+
+[Service]
+User=advance
+WorkingDirectory=/home/advance/examen/backend
+ExecStart=/home/advance/examen/backend/venv/bin/gunicorn -b 0.0.0.0:6000 -w 4 --error-logfile /var/log/backend/error.log --access-logfile /var/log/backend/access.log wsgi:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

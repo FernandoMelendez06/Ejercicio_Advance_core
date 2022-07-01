@@ -1,0 +1,19 @@
+
+.nada_main_content{
+
+    align-items: center;
+    background-color: $primary;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    p{
+        text-align: center;
+        
+        margin-bottom: 5px;
+    }
+
+} 
+
